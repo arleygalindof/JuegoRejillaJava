@@ -1,4 +1,3 @@
-<img width="1536" height="1024" alt="diagrama de clases" src="https://github.com/user-attachments/assets/31350187-4b67-4cb8-89df-46b0823b3b92" />
 # 🎮 Juego de la Rejilla — Java Threads
 
 Simulación concurrente de un juego sobre una rejilla donde múltiples jugadores compiten por cerrar una curva sobre el tablero. Implementado en **Java** usando **Threads nativos** como parte de un análisis comparativo de rendimiento y escalabilidad entre modelos de concurrencia.
