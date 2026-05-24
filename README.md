@@ -151,17 +151,7 @@ java -cp bin app.SistemaSimulacion 3 3 2 1
 
 Al finalizar cada partida se imprime un reporte:
 
-```
-╔══════════════════════════════════════╗
-║      REPORTE DE RENDIMIENTO          ║
-╠══════════════════════════════════════╣
-║  Hilos configurados  : 3             ║
-║  Total jugadas       : 21            ║
-║  Tiempo total (ms)   : 115.862       ║
-║  Promedio/turno (ms) : 1.873         ║
-║  Throughput (j/s)    : 181.25        ║
-╚══════════════════════════════════════╝
-```
+<img width="389" height="179" alt="image" src="https://github.com/user-attachments/assets/033eb097-0013-4c47-8c62-79f8deff8537" />
 
 ### Análisis de escalabilidad recomendado
 
