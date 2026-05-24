@@ -1,3 +1,4 @@
+<img width="1536" height="1024" alt="diagrama de clases" src="https://github.com/user-attachments/assets/31350187-4b67-4cb8-89df-46b0823b3b92" />
 # 🎮 Juego de la Rejilla — Java Threads
 
 Simulación concurrente de un juego sobre una rejilla donde múltiples jugadores compiten por cerrar una curva sobre el tablero. Implementado en **Java** usando **Threads nativos** como parte de un análisis comparativo de rendimiento y escalabilidad entre modelos de concurrencia.
@@ -48,70 +49,7 @@ JuegoRejillaJava/
 ---
 
 ## 📊 Diagrama de Clases
-
-```
-┌─────────────────────────────────┐
-│        SistemaSimulacion        │
-│─────────────────────────────────│
-│ + main(args: String[])          │
-│                                 │
-│ Orquesta el ciclo principal,    │
-│ turnos, hilos y métricas        │
-└────────────┬────────────────────┘
-             │ usa
-    ┌────────┴─────────────────────────────────────┐
-    │                                              │
-    ▼                                              ▼
-┌──────────────────────┐            ┌──────────────────────────┐
-│   MotorConcurrente   │            │         Rejilla           │
-│──────────────────────│            │──────────────────────────│
-│ - jugador: Jugador   │            │ - filas: int              │
-│ - listaJugadas       │            │ - columnas: int           │
-│ - rejilla: Rejilla   │            │ - conexiones: int[][]     │
-│ - cantidadCandidatas │            │──────────────────────────│
-│──────────────────────│            │ + esConexionValida()      │
-│ + run()              │            │ + estaLibre()             │
-└──────────┬───────────┘            │ + conectar()              │
-           │ genera                 │ + hayJugadasDisponibles() │
-           ▼                        │ + tieneCurvaCerrada()     │
-┌──────────────────────┐            │ + imprimir()              │
-│        Jugada        │            └──────────────────────────┘
-│──────────────────────│
-│ - puntoA: int        │
-│ - puntoB: int        │
-│ - jugadorId: int     │
-│──────────────────────│
-│ + getPuntoA()        │
-│ + getPuntoB()        │
-│ + getJugadorId()     │
-└──────────────────────┘
-
-┌──────────────────────┐            ┌──────────────────────────┐
-│       Jugador        │            │      ListaJugadas         │
-│──────────────────────│            │──────────────────────────│
-│ - id: int            │            │ - jugadas: List<Jugada>   │
-│ - nombre: String     │            │──────────────────────────│
-│ - colorAnsi: String  │            │ + agregarJugada() [sync] │
-│ - esTurnoActual      │            │ + obtenerTodas()  [sync] │
-│ - jugadasCandidatas  │            │ + limpiar()       [sync] │
-│──────────────────────│            └──────────────────────────┘
-│ + activarTurno()     │
-│ + desactivarTurno()  │            ┌──────────────────────────┐
-│ + agregarCandidata() │            │    MedidorRendimiento     │
-│ + obtenerCandidatas()│            │──────────────────────────│
-│ + getNombreColoreado │            │ - tiempoInicio: long      │
-└──────────────────────┘            │ - tiemposPorTurno: List  │
-                                    │ - totalJugadas: int       │
-┌──────────────────────┐            │ - numeroHilos: int        │
-│      Validador       │            │──────────────────────────│
-│──────────────────────│            │ + iniciarSimulacion()     │
-│ + validarParametros()│            │ + finalizarSimulacion()   │
-│ - validarFilas()     │            │ + registrarTurno()        │
-│ - validarColumnas()  │            │ + getTiempoTotalMs()      │
-│ - validarJugadores() │            │ + getThroughput()         │
-│ - validarHilos()     │            │ + imprimirReporte()       │
-└──────────────────────┘            └──────────────────────────┘
-```
+<img width="1536" height="1024" alt="diagrama de clases" src="https://github.com/user-attachments/assets/c8660252-f848-4a2a-8f0f-9aa4276dc363" />
 
 ---
 
