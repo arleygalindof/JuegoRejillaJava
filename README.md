@@ -91,7 +91,7 @@ TURNO DE J2 (activo):
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/JuegoRejillaJava.git
+git clone https://github.com/arleygalindof/JuegoRejillaJava.git
 cd JuegoRejillaJava
 ```
 
@@ -192,21 +192,6 @@ Ambas implementaciones ejecutan exactamente la misma lógica para permitir compa
 ---
 
 ## 📁 Visualización del Tablero
-
-```
-  ( 0)─────( 1)─────( 2)─────( 3)
-   │        │        │        │
-   │        │        │        │
-   │        │        │        │
-  ( 4)─────( 5)─────( 6)─────( 7)
-   │        │        │        │
-   │        │        │        │
-   │        │        │        │
-  ( 8)─────( 9)─────(10)─────(11)
-   │        │        │        │
-   │        │        │        │
-   │        │        │        │
-  (12)─────(13)─────(14)─────(15)
-```
+<img width="796" height="796" alt="image" src="https://github.com/user-attachments/assets/917fa8e3-03d5-4159-ba2a-1aba21d792fb" />
 
 Las conexiones ocupadas se muestran en el color del jugador que las tomó.
